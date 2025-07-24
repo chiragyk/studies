@@ -1,0 +1,624 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int n;
+    printf("Enter a number");
+    
+    switch(n) {
+        case 1:
+            printf("Monday");
+            break;
+        case 2:
+            printf("Tuesday");
+            break;
+        case 3:
+            printf("Wednesday");
+            break;
+        case 4:
+            printf("Thursday");
+            break;
+        case 5:
+            printf("Friday");
+            break;
+        case 6:
+            printf("Saturday");
+            break;
+        case 7:
+            printf("Sunday");
+            break;
+        default:
+            printf("Invalid number");
+            break;
+    }
+    
+    return 0;
+}
+
+------------------------------------------------------------
+
+Write a program to print month name for user given number
+
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int n;
+    printf("Enter a number: ");
+    scanf("%d", &n);
+    
+    switch(n) {
+        case 1:
+            printf("January");
+            break;
+        case 2:
+            printf("February");
+            break;
+        case 3:
+            printf("March");
+            break;
+        case 4:
+            printf("April");
+            break;
+        case 5:
+            printf("May");
+            break;
+        case 6:
+            printf("June");
+            break;
+        case 7:
+            printf("July");
+            break;
+        case 8:
+            printf("August");
+            break;
+        case 9:
+            printf("September");
+            break;
+        case 10:
+            printf("October");
+            break;
+        case 11:
+            printf("November");
+            break;
+        case 12:
+            printf("December");
+            break;
+        default:
+            printf("Invalid number");
+            break;
+    }
+    
+    return 0;
+}
+
+Write a program to perform an arithmetic operation based on user selection
+
+
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int a,b,n;
+    float c;
+       printf("Choose any of the following");
+      printf("\n1.ADD\n 2.SUB\n 3.MUL\n 4.DIV\n");
+      scanf("%d",&n);
+      
+    switch(n) {
+        case 1:
+            printf("Enter 2 numbers");
+            scanf("%d %d",&a,&b);
+            c=a+b;
+            printf("Add=%f",c);
+            break;
+        case 2:
+            printf("Enter 2 numbers");
+            scanf("%d %d",&a,&b);
+            c=a-b;
+            printf("Add=%f",c);
+            break;
+        case 3:
+           printf("Enter 2 numbers");
+            scanf("%d %d",&a,&b);
+            c=a*b;
+            printf("Add=%f",c);
+            break;
+        case 4:
+          printf("Enter 2 numbers");
+            scanf("%d %d",&a,&b);
+            c=a/b;
+            printf("Add=%f",c);
+            break;
+        default:
+            printf("Invalid number");
+            break;
+    }
+    
+    return 0;
+}
+
+
+
+Write a program to find and display area of square,rectangle,circle,triangle based on user selction
+
+// Online C compiler to run C program online
+#include <stdio.h>
+#include <math.h>
+int main() {
+    int a,b,n;
+    float c;
+       printf("Choose any of the following");
+      printf("\n 1.SQUARE\n 2.RECTANGLE\n 3.CIRCLE\n 4.TRIANGLE\n");
+      scanf("%d",&n);
+      
+    switch(n) {
+        case 1:
+            printf("Enter length of a side");
+            scanf("%d",&a);
+            c=a*a;
+            printf("Area=%f",c);
+            break;
+        case 2:
+           printf("Enter length and breadth");
+             scanf("%d %d",&a,&b);
+            c=a*b;
+            printf("Area=%f",c);
+            break;
+        case 3:
+           printf("Enter radius");
+            scanf("%d",&a);
+            c=3.14*a*a;
+            printf("Area=%f",c);
+            break;
+        case 4:
+          printf("Enter base and height");
+          scanf("%d %d",&a,&b);
+            c=0.5*a*b;
+            printf("Area=%f",c);
+            break;
+        default:
+            printf("Invalid number");
+            break;
+    }
+    
+    return 0;
+}
+
+
+you will be given bank balance 1000, pin=1234, and then perfoerm the following operations based on user selction
+deposit, withdraw, balanceinquiry pin change
+
+
+#include <stdio.h>
+
+int main() {
+    int bal = 1000, dep, wd, pin = 1234, ipin, n, np1,np2;
+
+    printf("Enter PIN: ");
+    scanf("%d", &ipin);
+
+    if (ipin == pin) {
+        printf("Correct PIN\n");
+
+        printf("Choose Operation:\n");
+        printf("1. Deposit\n2. Withdraw\n3. Check Balance\n4. Change PIN\n");
+        scanf("%d", &n);
+
+        switch (n) {
+            case 1:
+                printf("Enter amount to deposit: ");
+                scanf("%d", &dep);
+                if (dep > 0) {
+                    bal=1000+dep;
+                    printf("Amount deposited. New balance: %d\n", bal);
+                } else {
+                    printf("Invalid deposit amount\n");
+                }
+                break;
+
+            case 2:
+                printf("Enter amount to withdraw: ");
+                scanf("%d", &wd);
+                if ( wd < bal) {
+                    bal= bal- wd;
+                    printf("Amount withdrawn. New balance: %d\n", bal);
+                } else {
+                    printf("insufficient balance\n");
+                }
+                break;
+
+            case 3:
+                printf("Balance: %d\n", bal);
+                break;
+        }
+    }
+        {
+            printf("Incorrect pin");
+        }
+    
+        return 0;
+    }
+                
+                
+                
+                
+Write a program to print your name 10 times without using loop control statement
+
+
+#include <stdio.h>
+
+int main() {
+    printf("SAIF SHEIKH\n");
+    printf("SAIF SHEIKH\n");
+    printf("SAIF SHEIKH\n");
+    printf("SAIF SHEIKH\n");
+    printf("SAIF SHEIKH\n");
+    printf("SAIF SHEIKH\n");
+    printf("SAIF SHEIKH\n");
+    printf("SAIF SHEIKH\n");
+    printf("SAIF SHEIKH\n");
+    printf("SAIF SHEIKH\n");
+    return 0;
+}
+
+
+
+using loop control 
+#include <stdio.h>
+
+int main() {
+    int n=1;
+    while(n<=10)
+    {
+    printf("SAIF SHEIKH\n");
+    n++
+}
+     
+    
+
+    return 0;
+}
+
+ 
+A control statement that is used to execute same set of statements for multiple times until the given condition returns false
+In c programming we have the following loop control statements
+While
+Do while
+For
+
+While:
+
+while(condition)
+{
+	s1;
+	s2;
+	s3;
+}
+
+do while:
+
+do
+{
+	s1;
+	s2;
+	s3;
+} while(condition)
+
+for:
+
+for(initialization;condition;inc/dec)
+{
+	s1;
+	s2;
+	s3;
+}
+
+
+Write a program to print your name fro a user defined number of times 
+
+
+{
+int n,i=1;
+sf(%d,&n);
+while(i<=n)
+{ pf(saif);
+i++;
+}
+
+{
+int n,i=1;
+sf(%d,&n);
+do {
+{ pf(saif);
+i++;
+while(i<n);
+}
+
+{
+int n,i;
+sf(%d,&n);
+for(i=1;i<=n;i++)
+{ pf(saif);
+}
+
+
+Write a program to print natural numbers upto user given number
+
+#include <stdio.h>
+
+int main() {
+    int n,i;
+    printf("Enter a number: ");
+    scanf("%d",&n);
+
+    printf("Natural numbers up to %d are:\n", n);
+    for(i=1;i<=n;i++) {
+        printf("%d",i);
+    }
+    return 0;
+}
+
+
+
+Write a program to print even natural numbers upto user given number
+
+#include <stdio.h>
+int main() {
+    int n,i;
+    printf("Enter a number: ");
+    scanf("%d",&n);
+    printf(" numbers to be printed are:\n");
+    for(i=2;i<=n;i+=2)
+        printf("%d\n",i);
+    return 0;
+}
+
+
+
+Write a program to print in the user given range
+ip 10,20
+
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int s,e;
+    printf("Enter the range\n");
+    scanf("%d%d"&s,&e);
+    while(s<=e)
+    {
+        printf("%d\t",s);
+        s++;
+    }
+
+    return 0;
+}
+
+Write a program to print even natural numbers upto user given range
+
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int s,e;
+    printf("Enter the range\n");
+    scanf("%d%d",&s,&e);
+    while(s<=e)
+    {
+        if(s%2==0)
+        printf("%d\t",s);
+        s++;
+    }
+
+    return 0;
+}
+
+
+
+
+Write a program to print numbers in a user given range with reverse order
+
+#include <stdio.h>
+int main() {
+    int s, e;
+    printf("Enter the range\n");
+    scanf("%d%d",&s,&e);
+    while (e>=s) {
+        if (e%2==0)
+            printf("%d",e);
+        e--;
+    }
+    return 0;
+}
+
+
+
+Write a program to find and display sum of the numbers in the user given range
+#include <stdio.h>
+
+int main() {
+    int s,e,sum = 0;
+
+    printf("Enter the range: ");
+    scanf("%d%d",&s,&e);
+
+    for(int i=s;i<=e;i++) {
+        sum=sum+i;
+    }
+
+    printf("Sum of numbers is %d\n",sum);
+
+    return 0;
+}
+
+write a program to find sum of even numbers in the user given range
+#include <stdio.h>
+
+int main() {
+    int s,e,sum = 0;
+
+    printf("Enter the range: ");
+    scanf("%d%d",&s,&e);
+
+    for(int i=s;i<=e;i++) {
+        if(i%2==0)
+        sum=sum+i;
+    }
+
+    printf("Sum of numbers is %d\n",sum);
+
+    return 0;
+}
+
+Write a program to find sum of the digits of a given number
+ip n=123 op=6
+
+#include <stdio.h>
+
+int main() {
+    int n,sum,d;
+    printf("Enter a number: ");
+    scanf("%d",&n);
+    while(n>0)
+    {
+        d=n%10;
+        sum=sum+d;
+        n=n/10;
+    }
+printf("Sum of digits is %d\n", sum);
+    return 0;
+}
+
+
+
+Write a program to find palindrome of a given number
+#include <stdio.h>
+
+int main() {
+    int num, temp, rev = 0, digit;
+    
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    
+    temp = num;
+    
+    while (temp > 0) {
+        digit = temp % 10;       // get last digit
+        rev = rev * 10 + digit;  // build reversed number
+        temp /= 10;              // remove last digit
+    }
+    
+    if (num == rev)
+        printf("%d is a palindrome\n", num);
+    else
+        printf("%d is not a palindrome\n", num);
+
+    return 0;
+}
+
+
+write a program to find the reverse of a givern number
+#include <stdio.h>
+
+int main() {
+    int num, temp, rev = 0, digit;
+    
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    
+    temp = num;
+    
+    while (temp > 0) {
+        digit = temp % 10;    
+        rev = rev * 10 + digit;  
+        temp /= 10;              
+    }
+    
+        printf("%d is the reverse\n", rev);
+   
+    return 0;
+}
+
+
+Write a program to check if given number is palindrome or not
+#include <stdio.h>
+
+int main() {
+    int num, temp, rev = 0, digit;
+    
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    
+    temp = num;
+    
+    while (temp > 0) {
+        digit = temp % 10;       
+        rev = rev * 10 + digit;
+        temp /= 10;            
+    }
+    
+    if (num == rev)
+        printf("%d is a palindrome\n", num);
+    else
+        printf("%d is not a palindrome\n", num);
+
+    return 0;
+}
+
+Write a program to check if given number is prime or not
+
+#include <stdio.h>
+
+int main() {
+    int n, i;
+    printf("Enter a number: ");
+    scanf("%d", &n);
+    for(i = 2; i < n; i++)
+        if(n % i == 0) break;
+    if(n > 1 && i == n)
+        printf("Prime number");
+    else
+        printf("Not a prime number");
+    return 0;
+}
+
+
+Write a program to check give number is Armstrong nmubber or not
+#include <stdio.h>
+#include<math.h>
+int main() {
+    int n, d=0,sum=0,r,x,y;
+    printf("Enter a number: ");
+   scanf("%d",&n);
+   x=n;
+   y=n;
+   while(n>0)
+   {
+       d++;
+       n=n/10;
+   }
+   while(x>0)
+   {
+       r=x%10;
+       sum = sum + pow(r,d);
+       x=x/10;
+   }
+   if(y==sum)
+    printf("Armstrong");
+    else printf("Not Armstrong");
+    return 0;
+}
+
+
+you will be given 2 positive inteer values s,e. your task is to find and print prime numbers b/w given s,e
+ip: 10,20
+
+you will be given 2 positive integer values s,e. your task is to count number of prime numbers b/w s&e
+ip: 10,20
+
+you will be given 2 positive integer values s,e. your task is to print Armstrong numbers b/w s&e
+ip: 5,100
+
+you will be given 2 positive integer values s,e. your task is to count no of armstrtong numbers b/w s&e
+ip: 5,100
